@@ -28,7 +28,7 @@ def load_movie_data():
     )
 
     df = df[[
-        "title_x",
+        "title",
         "overview",
         "genres",
         "keywords",
