@@ -14,13 +14,12 @@ st.write("Choose a movie to get similar recommendations.")
 
 
 @st.cache_data
-#تحفظ نتيجة الدالة التالية مؤقتًا، فلا تعيد قراءة ملفات CSV كل مرة تتفاعل مع التطبيق
 
 def load_movie_data():
 
-    movies = pd.read_csv("data/tmdb_5000_movies.csv")
+    movies = pd.read_csv("tmdb_5000_movies.csv")
 
-    credits = pd.read_csv("data/tmdb_5000_credits.csv")
+    credits = pd.read_csv("tmdb_5000_credits_small.csv")
 
     df = movies.merge(
         credits,
