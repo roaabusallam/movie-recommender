@@ -36,9 +36,6 @@ def load_movie_data():
         "crew"
     ]]
 
-    df = df.rename(
-        columns={"title_x": "title"}
-    )
 
     df = df.dropna()
 
